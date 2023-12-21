@@ -1,3 +1,166 @@
-div {
-  background-color: rebeccapurple;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+header nav .navLogo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+header nav .navLogo .logo {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+header nav .navLogo ul {
+  display: flex;
+  width: 60%;
+  padding-left: 30px;
+  align-items: center;
+  gap: 20px;
+}
+header nav .navLogo ul li {
+  list-style: none;
+}
+header nav .navLogo ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: gray;
+  transition: 300ms;
+}
+header nav .navLogo ul li a:hover {
+  color: rgb(98, 98, 98);
+}
+header nav .navContainer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+}
+header nav .navWrapper {
+  display: flex;
+  align-items: center;
+}
+header nav .navWrapper .cart {
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 15px;
+  transition: 300ms;
+  cursor: pointer;
+  background-color: white;
+}
+header nav .navWrapper .cart span {
+  background-color: black;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+}
+header nav .navWrapper .cart:hover {
+  background-color: black;
+  color: white;
+}
+header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: rgb(31, 31, 31);
+}
+header section .headerContainer {
+  text-align: center;
+  color: white;
+}
+header section .headerContainer h1 {
+  font-size: 3.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+header section .headerContainer p {
+  color: rgb(172, 172, 172);
+  font-size: 23px;
+  padding-top: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 110vh;
+  padding-top: 40px;
+}
+.content .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 82%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.content .cards .card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 45%;
+  width: 22%;
+  position: relative;
+  overflow: hidden;
+}
+.content .cards .card .cardImg {
+  position: relative;
+  height: 40%;
+}
+.content .cards .card .cardImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.content .cards .card .productInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 35%;
+}
+.content .cards .card .button {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.content .cards .card .button button {
+  width: 117px;
+  height: 40px;
+  transition: 300ms;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+}
+.content .cards .card .button button:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17vh;
+  background-color: rgb(31, 31, 31);
+}
+footer p {
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
 }/*# sourceMappingURL=index.css.map */
